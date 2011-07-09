@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First address:</b>
+  <%= @address_range.first_address %>
+</p>
+
+<p>
+  <b>Last address:</b>
+  <%= @address_range.last_address %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @address_range.description %>
+</p>
+
+<p>
+  <b>Subnet:</b>
+  <%= @address_range.subnet_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_address_range_path(@address_range) %> |
+<%= link_to 'Back', address_ranges_path %>

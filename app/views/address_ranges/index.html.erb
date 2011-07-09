@@ -1,0 +1,29 @@
+<h1>Listing address_ranges</h1>
+
+<table>
+  <tr>
+    <th>First address</th>
+    <th>Last address</th>
+    <th>Description</th>
+    <th>Subnet</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @address_ranges.each do |address_range| %>
+  <tr>
+    <td><%= address_range.first_address %></td>
+    <td><%= address_range.last_address %></td>
+    <td><%= address_range.description %></td>
+    <td><%= address_range.subnet_id %></td>
+    <td><%= link_to 'Show', address_range %></td>
+    <td><%= link_to 'Edit', edit_address_range_path(address_range) %></td>
+    <td><%= link_to 'Destroy', address_range, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Address range', new_address_range_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  interface_name: MyString
+  layer2_address: MyString
+  description: MyString
+  system_id: 1
+
+two:
+  interface_name: MyString
+  layer2_address: MyString
+  description: MyString
+  system_id: 1

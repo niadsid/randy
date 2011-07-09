@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  network_address: MyString
+  mask_length: 1
+  description: MyString
+  virtual_ip: false
+  subnet_id: 1
+  interface_id: 1
+  nat_address_id: 1
+  address_range_id: 1
+
+two:
+  network_address: MyString
+  mask_length: 1
+  description: MyString
+  virtual_ip: false
+  subnet_id: 1
+  interface_id: 1
+  nat_address_id: 1
+  address_range_id: 1

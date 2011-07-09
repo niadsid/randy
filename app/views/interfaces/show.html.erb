@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Interface name:</b>
+  <%= @interface.interface_name %>
+</p>
+
+<p>
+  <b>Layer2 address:</b>
+  <%= @interface.layer2_address %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @interface.description %>
+</p>
+
+<p>
+  <b>System:</b>
+  <%= @interface.system_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_interface_path(@interface) %> |
+<%= link_to 'Back', interfaces_path %>

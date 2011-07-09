@@ -1,0 +1,25 @@
+<%= form_for(@domain_name) do |f| %>
+  <% if @domain_name.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@domain_name.errors.count, "error") %> prohibited this domain_name from being saved:</h2>
+
+      <ul>
+      <% @domain_name.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fully_qualified_domain_name %><br />
+    <%= f.text_field :fully_qualified_domain_name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

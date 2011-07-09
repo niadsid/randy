@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  first_address: MyString
+  last_address: MyString
+  description: MyString
+  subnet_id: 1
+
+two:
+  first_address: MyString
+  last_address: MyString
+  description: MyString
+  subnet_id: 1

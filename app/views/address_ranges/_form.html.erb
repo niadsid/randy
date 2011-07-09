@@ -1,0 +1,33 @@
+<%= form_for(@address_range) do |f| %>
+  <% if @address_range.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@address_range.errors.count, "error") %> prohibited this address_range from being saved:</h2>
+
+      <ul>
+      <% @address_range.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_address %><br />
+    <%= f.text_field :first_address %>
+  </div>
+  <div class="field">
+    <%= f.label :last_address %><br />
+    <%= f.text_field :last_address %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :subnet_id %><br />
+    <%= f.text_field :subnet_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

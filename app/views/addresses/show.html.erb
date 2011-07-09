@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Network address:</b>
+  <%= @address.network_address %>
+</p>
+
+<p>
+  <b>Mask length:</b>
+  <%= @address.mask_length %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @address.description %>
+</p>
+
+<p>
+  <b>Virtual ip:</b>
+  <%= @address.virtual_ip %>
+</p>
+
+<p>
+  <b>Subnet:</b>
+  <%= @address.subnet_id %>
+</p>
+
+<p>
+  <b>Interface:</b>
+  <%= @address.interface_id %>
+</p>
+
+<p>
+  <b>Nat address:</b>
+  <%= @address.nat_address_id %>
+</p>
+
+<p>
+  <b>Address range:</b>
+  <%= @address.address_range_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_address_path(@address) %> |
+<%= link_to 'Back', addresses_path %>

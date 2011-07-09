@@ -1,0 +1,25 @@
+<%= form_for(@domain_mapping) do |f| %>
+  <% if @domain_mapping.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@domain_mapping.errors.count, "error") %> prohibited this domain_mapping from being saved:</h2>
+
+      <ul>
+      <% @domain_mapping.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :domain_name_id %><br />
+    <%= f.text_field :domain_name_id %>
+  </div>
+  <div class="field">
+    <%= f.label :address_id %><br />
+    <%= f.text_field :address_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

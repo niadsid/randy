@@ -1,0 +1,25 @@
+<h1>Listing domain_names</h1>
+
+<table>
+  <tr>
+    <th>Fully qualified domain name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @domain_names.each do |domain_name| %>
+  <tr>
+    <td><%= domain_name.fully_qualified_domain_name %></td>
+    <td><%= domain_name.description %></td>
+    <td><%= link_to 'Show', domain_name %></td>
+    <td><%= link_to 'Edit', edit_domain_name_path(domain_name) %></td>
+    <td><%= link_to 'Destroy', domain_name, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Domain name', new_domain_name_path %>

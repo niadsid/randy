@@ -1,0 +1,25 @@
+<h1>Listing domain_mappings</h1>
+
+<table>
+  <tr>
+    <th>Domain name</th>
+    <th>Address</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @domain_mappings.each do |domain_mapping| %>
+  <tr>
+    <td><%= domain_mapping.domain_name_id %></td>
+    <td><%= domain_mapping.address_id %></td>
+    <td><%= link_to 'Show', domain_mapping %></td>
+    <td><%= link_to 'Edit', edit_domain_mapping_path(domain_mapping) %></td>
+    <td><%= link_to 'Destroy', domain_mapping, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Domain mapping', new_domain_mapping_path %>

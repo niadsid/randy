@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Domain name:</b>
+  <%= @domain_mapping.domain_name_id %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @domain_mapping.address_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_domain_mapping_path(@domain_mapping) %> |
+<%= link_to 'Back', domain_mappings_path %>
